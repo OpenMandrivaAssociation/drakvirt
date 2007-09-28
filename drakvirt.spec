@@ -12,7 +12,7 @@ Group:		System/Configuration/Other
 Url:		https://svn.mandriva.com/svn/soft/drakvirt/trunk/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:      noarch
-Requires:	drakxtools
+Requires:	drakxtools >= drakxtools-10.4.222-1mdv2008.0
 
 %description
 This tool allows to configure virtualization using Xen.
