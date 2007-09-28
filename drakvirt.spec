@@ -1,5 +1,5 @@
 %define name drakvirt
-%define version 0.3
+%define version 0.4
 %define release %mkrel 1
 
 Summary:	Virtualization configuration
