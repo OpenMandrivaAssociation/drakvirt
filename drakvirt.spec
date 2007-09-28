@@ -1,6 +1,6 @@
 %define name drakvirt
 %define version 0.4
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	Virtualization configuration
 Name:		%{name}
@@ -12,7 +12,7 @@ Group:		System/Configuration/Other
 Url:		https://svn.mandriva.com/svn/soft/drakvirt/trunk/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:      noarch
-Requires:	drakxtools >= drakxtools-10.4.222-1mdv2008.0
+Requires:	drakxtools >= 10.4.222-1mdv2008.0
 
 %description
 This tool allows to configure virtualization using Xen.
