@@ -46,5 +46,5 @@ rm -rf %{buildroot}
 %_datadir/%name/virtual/*.pm
 %_datadir/applications/%name.desktop
 %_prefix/lib/libDrakX/icons/*.png
-
+%{_iconsdir}/%{name}.png
 
