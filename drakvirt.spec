@@ -1,12 +1,13 @@
 %define name drakvirt
 %define version 0.8.2
-%define release %mkrel 2
+%define release %mkrel 3
 
 Summary:	Virtualization configuration
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Source0:	%{name}-%{version}.tar.bz2
+Patch:		xen.pm.patch
 License:	GPL
 Group:		System/Configuration/Other
 Url:		https://svn.mandriva.com/svn/soft/drakvirt/trunk/
@@ -19,6 +20,7 @@ This tool allows to configure virtualization using Xen.
 
 %prep
 %setup -q
+%patch -p0
 
 %build
 %make
