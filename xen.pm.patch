@@ -1,0 +1,11 @@
+--- lib/virtual/xen.pm.old	2007-09-28 22:32:22.000000000 +0400
++++ lib/virtual/xen.pm	2011-09-12 23:58:57.000000000 +0400
+@@ -127,7 +127,7 @@
+ sub run_guest_installer {
+     my ($self, $in) = @_;
+ 
+-    $in->do_pkgs->ensure_are_installed([ 'xorg-x11-Xnest', 'curl' ]) or return;
++    $in->do_pkgs->ensure_are_installed([ 'x11-server-xnest', 'curl' ]) or return;
+ 
+     require File::Temp;
+     (undef, my $defcfg) = File::Temp::tempfile(undef, OPEN => 0);
